@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-image: url(../Pic/expense3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: 100%;
+  min-height: 90vh;
+  margin: 0;
+}
+.box {
+  border: 2px solid black;
+  width: 500px;
+  margin: 70px 450px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+}
+header {
+  /* position: sticky;
+  top: 0px;
+  right: 0px; */
+  font-size: 25px;
+  font-weight: 900;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  height: 100px;
+  place-content: center;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container {
+  width: 350px;
+  margin: 30px auto;
+}
+h1 {
+  letter-spacing: 1px;
+  margin: 0px;
+}
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+h4 {
+  margin: 0px;
+  text-transform: uppercase;
+}
+.inc-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: #bbb;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.inc-container > div {
+  flex: 1;
+  text-align: center;
+}
+.inc-container > div:first-of-type {
+  border-right: 1px solid #ddd;
+}
+/* .money {
+  font-size: 20px;
+  letter-spacing: 1;
+  margin: 5px 0;
+} */
+.money-plus {
+  color: #2eee71;
+}
+.money-minus {
+  color: #c0392b;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+  color: black;
+  font-weight: 700;
+}
+input[type="text"],
+input[type="number"] {
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.btn {
+  cursor: pointer;
+  background: #4a249d;
+  color: #fff;
+  border: 0px;
+  box-shadow: #dedede;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.btn:focus,
+.delete-btn:focus {
+  outline: 0px;
+}
+.list {
+  list-style-type: none;
+  padding: 0px;
+  margin-bottom: 40px;
+}
+.list li {
+  background-color: lightgray;
+  /* box-shadow: #ddd; */
+  font-weight: 500;
+  font-size: 18px;
+  color: purple;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  border-radius: 5px;
+}
+
+.list li.money-plus {
+  border-right: 5px solid #2eee71;
+}
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+.delete-btn:focus {
+  cursor: pointer;
+  background-color: red;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list li:hover .delete-btn:focus {
+  opacity: 1;
+}
